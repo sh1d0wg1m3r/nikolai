@@ -1,0 +1,200 @@
+/* Global styles */
+body {
+    font-family: Courier, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Container for the grid */
+header,
+nav,
+main {
+    margin: 0 auto;
+}
+
+/* Grid styles */
+header,
+nav,
+main {
+    display: grid;
+    grid-gap: 0px;
+}
+
+header {
+    grid-template-columns: auto;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-template-columns: auto;
+    align-items: right;
+    padding: 0px 0;
+    background-color: #333;
+}
+
+main {
+    grid-template-columns: auto;
+    padding: 20px 0;
+}
+
+/* Header styles */
+h1 {
+    position: relative;
+    animation: move-h1 2s infinite alternate;
+    text-transform: uppercase;
+    text-align: center;
+    color: #003366;
+}
+
+@keyframes move-h1 {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 50px;
+    }
+}
+
+#color-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#color-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Main styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+pre {
+    font-family: Courier, sans-serif;
+    font-size: 13px;
+    white-space: pre-wrap;
+    width: 93%;
+    overflow-wrap: break-word;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    padding: 1px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: auto;
+        text-align: center;
+    }
+
+    nav {
+        grid-template-columns: auto;
+        text-align: center;
+    }
+
+    nav > a,
+    nav > button {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+
+    pre {
+        width: 100%;
+    }
+}
+
+/* Add these styles to your existing CSS */
+.page-container {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+html {
+    cursor: url('cursor.cur'), auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add this to your CSS */
+#logo {
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Keep the aspect ratio */
+}
+
+/* Add this to your CSS */
+.footer-contents {
+    display: flex;
+    align-items: center;
+}
+
+.float-left {
+    float: right;
+    height: 300px;
+    max-width: auto;
+    margin-right: auto;
+}
+
+p {
+    padding-left: 2px;
+
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#logoo {
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-right: 0px;
+}
+
+#center-image {
+    display: block;
+    margin: 20px auto;
+    width: auto;
+    height: 440px;
+}
+
