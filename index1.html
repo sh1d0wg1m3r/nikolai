@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML & CSS Cheatsheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 15px;
+            margin-right: 10px;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x:auto; 
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML & CSS Cheatsheet</h1>
+    </header>
+    <nav>
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+    </nav>
+    <main class="container">
+      <section id="html">
+          <h2>HTML</h2>
+
+          <h3>Basic Structure</h3>
+          <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Page content goes here
+  &lt;/body&gt;
+&lt;/html&gt;
+          </pre>
+
+          <h3>Common Elements</h3>
+          <pre>
+&lt;h1&gt; to &lt;h6&gt; - Headings
+&lt;p&gt; - Paragraph
+&lt;a href="URL"&gt; - Link
+&lt;img src="image.jpg" alt="Description"&gt; - Image
+&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; - Lists
+&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt; - Tables
+&lt;br&gt; - Line break
+&lt;hr&gt; - Horizontal rule
+          </pre>
+      </section>
+
+      <section id="css">
+          <h2>CSS</h2>
+
+          <h3>Basic Structure</h3>
+          <pre>
+selector {
+  property: value;
+}
+          </pre>
+
+          <h3>Common Properties</h3>
+          <pre>
+color: red;
+background-color: #333;
+font-family: Arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+
+margin: 0 auto;
+padding: 0;
+
+border: 1px solid black;
+border-radius: 5px;
+
+display: flex;
+justify-content: center;
+
+width: 100%;
+height: auto;
+
+transition: all 0.3s ease;
+:hover - Pseudo-class for hover effect
+
+@media (max-width: 768px) { }
+        </pre>
+      </section>
+    </main>
+</body>
+</html>
